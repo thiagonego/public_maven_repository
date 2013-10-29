@@ -14,8 +14,8 @@
 	<inceptionYear>2009</inceptionYear>
 
 	<properties>
-		<!-- no arquivo de configurações do maven (~/.m2/settings.xml) 
-			adicionar as seguintas configurações do server github
+	
+		<!-- no arquivo de configurações do maven (~/.m2/settings.xml)  adicionar as seguintas configurações do server github
 			<settings>
 				<servers>
 					<server>
@@ -26,6 +26,7 @@
 				</servers>
 			</settings>
 		-->
+		
 		<github.global.server>github</github.global.server>
 	</properties>
 
@@ -73,29 +74,15 @@
 		<url>http://thiagonego.repositoryhosting.com/svn/thiagonego_alfred</url>
 	</scm>
 
-	<!-- para fazer o deploy dessa lib basta executar a goal mvn deploy -->
 	<distributionManagement>
 		<repository>
 			<id>internal.repo</id>
 			<name>Temporary Staging Repository</name>
 			<url>file://${project.build.directory}/mvn-repo</url>
 		</repository>
-		<!-- <repository> -->
-		<!-- <id>thiagonego_maven_repo</id> -->
-		<!-- <name>RepositoryHosting for Maven Repository</name> -->
-		<!-- <url>svn:https://thiagonego.repositoryhosting.com/svn/thiagonego_maven_repo</url> -->
-		<!-- <uniqueVersion>false</uniqueVersion> -->
-		<!-- </repository> -->
 	</distributionManagement>
 
 	<build>
-		<!-- <extensions> -->
-		<!-- <extension> -->
-		<!-- <groupId>org.jvnet.wagon-svn</groupId> -->
-		<!-- <artifactId>wagon-svn</artifactId> -->
-		<!-- <version>1.8</version> -->
-		<!-- </extension> -->
-		<!-- </extensions> -->
 		<plugins>
 			<plugin>
 				<groupId>com.github.github</groupId>
