@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.com.twsoftware</groupId>
 	<artifactId>alfred</artifactId>
-	<version>0.0.4.05</version>
+	<version>0.0.4.06</version>
 	<packaging>jar</packaging>
 
 	<name>Suite de utilitário para qualquer código Java/Groovy</name>
